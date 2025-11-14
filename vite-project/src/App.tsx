@@ -1,25 +1,6 @@
-import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [userId, setUserId] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // TODO: Replace this with your backend or Firebase function endpoint
-    // Example:
-    // await fetch("https://your-cloud-function-url/deleteUser", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({ userId }),
-    // });
-
-    console.log("Request submitted for:", userId);
-    setSubmitted(true);
-  };
-
   return (
     <div className="container">
       <h1>ColorFill – Account Deletion Request</h1>
